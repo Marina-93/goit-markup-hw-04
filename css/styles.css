@@ -68,11 +68,9 @@ img{
     border-bottom: 1px solid #ECECEC;
 }
 .line{
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: flex-start;
-    box-sizing: border-box;
-    margin-bottom: 0;
 }
 .log{
     font-family: 'Raleway', sans-serif;
@@ -89,7 +87,9 @@ img{
     color: var(--acttiv-cl);
 }
 .site{
-    display: inline-flex;
+    display: flex;
+}
+.nav{
     margin-right: auto;
 }
 .site .menu-item{
@@ -110,8 +110,6 @@ img{
     display: block;
 }
 .menu{
-    display: inline-flex;
-    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -133,7 +131,7 @@ img{
 }
 /*Шапка*/
 .hat{
-    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(/images/grup.jpg);
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/grup.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1600px;
@@ -143,6 +141,7 @@ img{
     margin-bottom: auto;
     padding-bottom: 200px;
     padding-top: 200px;
+    background-position: center;
 }
 .big-title{
     color: var(--blfon-text-cl);
@@ -276,7 +275,7 @@ img{
     fill: var(--buton);
 }
 .log-network:hover,
-.log-network:hover{
+.log-network:focus{
     background-color: var(--acttiv-cl);
 }
 .network-svg{
